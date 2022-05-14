@@ -655,49 +655,6 @@ cd /root
 clear
 echo " "
 echo "Installation has been completed!!"
-echo "YOUR VPS WILL REBOOT IN 60 SECONDS"
-echo "DO NOT PRESS CTRL + C or cancel"
-echo "OR ELSE THE SETUP WILL FAILED"
-echo " "
-echo "--------------------------- Configuration Setup Server -------------------------"
-echo "                          Copyright HostingTermurah.net                         "
-echo "                             Remodified by Kyzer                   "
-echo "--------------------------------------------------------------------------------"
-echo ""  | tee -a log-install.txt
-echo "Server Information"  | tee -a log-install.txt
-echo "   - Timezone    : Asia/Manila (GMT +8)"  | tee -a log-install.txt
-echo "   - Fail2Ban    : [ON]"  | tee -a log-install.txt
-echo "   - IPtables    : [ON]"  | tee -a log-install.txt
-echo "   - Anti DDOS	 : [ON]"  | tee -a log-install.txt
-echo "   - Auto-Reboot : [OFF]"  | tee -a log-install.txt
-echo "   - IPv6        : [OFF]"  | tee -a log-install.txt
-echo "   - Anti Torrent: [ON]"  | tee -a log-install.txt
-echo "   - Protection  : [ON]"  | tee -a log-install.txt
-echo "   - DNS SERVER  : Cloudflare DNS (OpenVPN only)"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Application & Port Information"  | tee -a log-install.txt
-echo "   - OpenVPN		: TCP 1153 "  | tee -a log-install.txt
-echo "   - OpenVPN SSL	: 443 "  | tee -a log-install.txt
-echo "   - Dropbear		: 442"  | tee -a log-install.txt
-echo "   - Stunnel		: 444"  | tee -a log-install.txt
-echo "   - Squid Proxy	: 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
-echo "   - Nginx		: 80"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Premium Script Information"  | tee -a log-install.txt
-echo "   To display list of commands: menu"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "* Join TEAM Epiphany Discord Group Chat"  | tee -a log-install.txt
-echo "   - Link		: https://discord.gg/EHq4XjH"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Important Information"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : For TCP http://$MYIP/client.ovpn"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : For SSL http://$MYIP/clientssl.ovpn"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : For Package http://$MYIP/openvpn.zip"  | tee -a log-install.txt
-echo "   - Your Website	     : Go to http://$MYIP/ now to see!"  | tee -a log-install.txt
-echo "   - Installation Log        : Type command log-install"  | tee -a log-install.txt
-echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
-echo ""
-echo "------------------------------ Remodified by Hiratechi --------------------------"
-echo "--------------------------Rebooting your VPS in 60 seconds-----------------------"
-sleep 55
+echo "YOUR VPS WILL REBOOT IN 5 SECONDS"
+sleep 5
 reboot
